@@ -1,0 +1,111 @@
+/**
+ * Quill Editor Dark Mode Styles
+ *
+ * Custom styling for Quill.js editor to support dark mode
+ * and match the application's design system.
+ */
+
+/* Dark mode toolbar */
+.dark .ql-toolbar {
+    background-color: #18181b;
+    border-color: #3f3f46;
+}
+
+/* Dark mode container */
+.dark .ql-container {
+    border-color: #3f3f46;
+}
+
+/* Dark mode editor text */
+.dark .ql-editor {
+    color: #e5e7eb;
+}
+
+/* Dark mode SVG stroke colors */
+.dark .ql-stroke {
+    stroke: #e5e7eb;
+}
+
+/* Dark mode SVG fill colors */
+.dark .ql-fill {
+    fill: #e5e7eb;
+}
+
+/* Dark mode picker label */
+.dark .ql-picker-label {
+    color: #e5e7eb;
+}
+
+/* Dark mode picker dropdown */
+.dark .ql-picker-options {
+    background-color: #27272a;
+    border-color: #3f3f46;
+}
+
+/* Dark mode picker items */
+.dark .ql-picker-item {
+    color: #e5e7eb;
+}
+
+/* Dark mode picker item hover */
+.dark .ql-picker-item:hover {
+    color: #3b82f6;
+}
+
+/* Dark mode toolbar button hover and active states */
+.dark .ql-toolbar button:hover .ql-stroke,
+.dark .ql-toolbar button.ql-active .ql-stroke {
+    stroke: #3b82f6;
+}
+
+.dark .ql-toolbar button:hover .ql-fill,
+.dark .ql-toolbar button.ql-active .ql-fill {
+    fill: #3b82f6;
+}
+
+/* Editor dimensions and scroll */
+.ql-editor {
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Editor placeholder text */
+.ql-editor.ql-blank::before {
+    color: #9ca3af;
+    font-style: normal;
+}
+
+.dark .ql-editor.ql-blank::before {
+    color: #6b7280;
+}
+
+/* Custom scrollbar for editor */
+.ql-editor::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ql-editor::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+.dark .ql-editor::-webkit-scrollbar-track {
+    background: #27272a;
+}
+
+.ql-editor::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.dark .ql-editor::-webkit-scrollbar-thumb {
+    background: #52525b;
+}
+
+.ql-editor::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.dark .ql-editor::-webkit-scrollbar-thumb:hover {
+    background: #71717a;
+}

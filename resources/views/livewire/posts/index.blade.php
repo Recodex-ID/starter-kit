@@ -429,14 +429,10 @@ new class extends Component {
                 rows="2"
             />
 
-            <div>
+            <div x-data="quillEditor(@entangle('content'))" x-init="initQuill()">
                 <flux:label>Content</flux:label>
-                <flux:textarea
-                    wire:model="content"
-                    placeholder="Enter post content"
-                    rows="8"
-                    required
-                />
+                <div x-ref="editor" class="bg-white dark:bg-neutral-900" style="min-height: 200px;"></div>
+                <input type="hidden" x-model="content" required>
             </div>
 
             <div>

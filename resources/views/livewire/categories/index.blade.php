@@ -325,4 +325,4 @@ new class extends Component {
             </div>
         </form>
     </flux:modal>
-</x-layouts.app>
+</section>

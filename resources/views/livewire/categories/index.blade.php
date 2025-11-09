@@ -244,7 +244,7 @@ new class extends Component {
                                     variant="ghost"
                                     wire:click="toggleStatus({{ $category->id }})"
                                     title="Toggle Status"
-                                    icon="{{ $category->is_active ? 'eye' : 'eye-off' }}"
+                                    icon="{{ $category->is_active ? 'eye' : 'eye-slash' }}"
                                 />
 
                                 <flux:button

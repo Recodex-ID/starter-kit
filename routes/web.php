@@ -30,6 +30,9 @@ Route::middleware(['auth'])->group(function () {
         )
         ->name('two-factor.show');
 
+    // Posts
+    Volt::route('posts', 'posts.index')->name('posts.index');
+
     // Categories
     Volt::route('categories', 'categories.index')->name('categories.index');
 

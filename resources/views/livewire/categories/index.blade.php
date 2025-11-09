@@ -219,7 +219,7 @@ new class extends Component {
                                         {{ $category->name }}
                                     </h3>
                                     <flux:badge
-                                        :color="$category->is_active ? 'green' : 'gray'"
+                                        color="{{ $category->is_active ? 'green' : 'gray' }}"
                                         size="sm"
                                     >
                                         {{ $category->is_active ? 'Active' : 'Inactive' }}
@@ -244,7 +244,7 @@ new class extends Component {
                                     variant="ghost"
                                     wire:click="toggleStatus({{ $category->id }})"
                                     title="Toggle Status"
-                                    :icon="$category->is_active ? 'eye' : 'eye-off'"
+                                    icon="{{ $category->is_active ? 'eye' : 'eye-off' }}"
                                 />
 
                                 <flux:button

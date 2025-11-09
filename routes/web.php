@@ -29,4 +29,7 @@ Route::middleware(['auth'])->group(function () {
             ),
         )
         ->name('two-factor.show');
+
+    // Categories
+    Volt::route('categories', 'categories.index')->name('categories.index');
 });

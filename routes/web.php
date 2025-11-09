@@ -32,4 +32,7 @@ Route::middleware(['auth'])->group(function () {
 
     // Categories
     Volt::route('categories', 'categories.index')->name('categories.index');
+
+    // Tags
+    Volt::route('tags', 'tags.index')->name('tags.index');
 });
